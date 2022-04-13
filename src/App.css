@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+.bgcolor{
+  background-color: #f1f2f3;
+}
 .App {
   text-align: center;
 }
@@ -27,6 +34,213 @@
 .App-link {
   color: #61dafb;
 }
+
+
+/* navbar css  */
+.search-icon{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.search-input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+.search-bar{
+  border: 0.5px solid rgb(183, 181, 181);
+  border-radius: 30px;
+  width: 200px;
+}
+
+/* collapse left panel css  */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+
+
+  /* background-color: white;
+  height: 100%;
+  width: 350px ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden !important;
+  transition: 0.5s;
+  padding-top: 60px; */
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px ;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white;
+  background-color: #0044e9;
+
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.closebtn{
+  position: absolute !important;
+  top: 16px !important;
+  left: 160px ;
+  font-size: 20px !important;
+  border: none  ;
+  background-color: transparent;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.plus-icon{
+  text-align: center;
+  border-radius: 30px;
+  background-color: #0044e9;
+  padding: 5px;
+  width: 37px;
+}
+.bell-icon{
+  text-align: center;
+  border-radius: 30px;
+  background-color: white;
+  padding: 5px;
+  width: 37px;
+}
+
+.tooth{
+  position: relative;
+  top: 10px;
+}
+
+.leftpanel-logo{
+  position: relative;
+  bottom: 50px;
+}
+
+.tabs{
+  position: relative;
+  bottom: 30px;
+}
+
+.down-panel{
+  margin-top: 190px;
+  /* position: relative;
+  top: 100px; */
+}
+.doctor-logo{
+  border-radius: 80px;
+}
+/* .openbtn:hover {
+  background-color: #444;
+} */
+
+.e1{
+ border: 1.5px solid rgb(222, 221, 221);
+ height: 80px;
+}
+.printer-icon{
+  height: 30px;
+  width: 30px;
+  background-color: white;
+}
+.edit-patient{
+  color: grey;
+  height: 30px;
+  width: 130px;
+  background-color: white;
+}
+.patient-avatar{
+  border-radius: 160px;
+}
+
+.savenote-btn{
+  background-color: #0044e9  ;
+  color:white;
+  border:none;
+  border-radius:5px;
+  position:relative;
+  left: 260px;
+}
+
+
+.appointment-ul{
+  width: 850px;
+}
+.appointment-li{
+  list-style: none;
+  text-decoration: none;
+position: relative; 
+top: 9px;
+ border-radius: 5px;
+  background-color: white;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height:"100px"
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
 
 @keyframes App-logo-spin {
   from {
